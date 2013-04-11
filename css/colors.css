@@ -1,0 +1,19 @@
+html {
+	background-color: #f6f6f6;
+}
+
+a {
+	color: #999;
+}
+
+a:hover {
+	color: #bbb;
+}
+
+#header, #footer {
+	background-color: #fff;
+}
+
+#content em, #copyright {
+	color: #666;
+}

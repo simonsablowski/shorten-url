@@ -1,0 +1,6 @@
+ErrorDocument 404 http://www.simsab.net
+
+RewriteEngine on
+
+RewriteRule ^$ index.php [L]
+RewriteRule ^(\w+)/?$ index.php?code=$1
