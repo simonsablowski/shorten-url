@@ -17,6 +17,11 @@ class Database {
 	
 	// todo: make abstract
 	public function query($statement) {
-		return mysql_fetch_object(mysql_query($statement, $this->link));
+		return mysql_query($statement, $this->link);
+	}
+	
+	// todo: make abstract
+	public function fetch($result) {
+		return mysql_fetch_object($result);
 	}
 }

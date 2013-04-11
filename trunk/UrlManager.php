@@ -27,9 +27,9 @@ class UrlManager {
 		}
 		if (!is_object($this->cache) || is_null($result)) {
 			$result = $this->database->fetch($this->database->query($statement));
-		}
-		if (is_object($this->cache) && is_object($result)) {
-			$this->cache->store($key, $result);
+			if (is_object($result) && is_object($this->cache)) {
+				$this->cache->store($key, $result);
+			}
 		}
 		
 		return isset($result->url) ? $result->url : null;
