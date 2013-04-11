@@ -24,7 +24,7 @@
 			</div>
 			<div id="content">
 				<p id="explanation">
-					Post a URL to be shortened and optionally a code that identifies it.
+					Post the URL you want shortened and optionally the code that identifies it.
 				</p>
 				<form method="post" action="/shrtn/">
 					<dl>
